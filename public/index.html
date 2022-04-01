@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/common-pixel">
+  <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/common-pixel" crossorigin>
+  
+    
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Moralis site created using create-react-app" />
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/common-pixel" />
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/common-pixel" crossorigin />
+    <link
+      href="http://fonts.cdnfonts.com/css/common-pixel"
+      rel="stylesheet"
+    />
+    <title>NFT_CRIB Marketplace</title>
+    <script src="https://unpkg.com/moralis@latest/dist/moralis.js"></script>
+
+
+  
+  </head>
+  <body>
+    <script src='/Users/someshsahu/ethereum-nft-marketplace-boilerplate/src/index.js'> </script>
+    <div id="root"></div>
+
+    <button id="btn-login" onclick="buycrypto()" style="position: absolute; bottom: 88%; left: 90%; border-radius: 40px; color: #ffffff; background-color: #08244c;">Buy Crypto</button>
+
+    <br><br>
+
+    <script>
+
+      Moralis.initialize("CgQrL9yCkbE3vLL7FVUoJLPHyrtTZrFyehfxMEcg");
+      Moralis.serverURL="https://cjgvuk2ci9ea.usemoralis.com:2053/server";
+
+      (async function(){
+        Moralis.initPlugins();
+      })();
+
+      function buycrypto(){
+        Moralis.Plugins.fiat.buy();
+      }
+
+    </script>
+  </body>
+
+</html>
+
+
