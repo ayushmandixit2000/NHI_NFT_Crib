@@ -9,5 +9,3 @@ Solidity
 HTML
 
 CSS
-
-Shell
