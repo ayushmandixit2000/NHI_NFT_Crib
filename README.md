@@ -9,3 +9,6 @@ Solidity
 HTML
 
 CSS
+
+
+Due to limitations in unity’s webGL module to support moralis and web3, the game was not made live on unity play.
